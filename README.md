@@ -33,32 +33,57 @@ Java 基础语法
 ```text
 src/
 ├─ basic/              Java 基础语法
-├─ oop/                面向对象
-├─ collection/         集合框架
-├─ exception/          异常处理
-├─ generic/            泛型
-├─ lambda/             Lambda / Stream
-├─ io/                 文件与输入输出
-├─ datetime/           日期时间
-├─ thread/             多线程基础
-├─ jdbc/               数据库连接基础
-├─ spring/             Spring / Spring Boot 预备知识
-└─ projectcase/        模拟真实后端业务代码
-```
-
-## 当前阶段：basic
-
-`basic` 目录用于掌握 Java 最基础的语法。这里的每个文件都包含一个 `main` 方法，可以单独运行。
-
-```text
-src/basic/
-├─ HelloWorld.java          程序入口、控制台输出
-├─ VariableAndType.java     变量、基础类型、字符串
-├─ OperatorDemo.java        运算符
-├─ IfElseDemo.java          条件判断
-├─ ForLoopDemo.java         循环
-├─ ArrayDemo.java           数组
-└─ MethodDemo.java          方法定义与调用
+│  ├─ HelloWorld.java              程序入口、控制台输出
+│  ├─ VariableAndType.java         变量、基础类型、字符串
+│  ├─ OperatorDemo.java            运算符
+│  ├─ IfElseDemo.java              条件判断
+│  ├─ ForLoopDemo.java             循环
+│  ├─ ArrayDemo.java               数组
+│  └─ MethodDemo.java              方法定义与调用
+├─ oop/                    面向对象
+│  ├─ ClassAndObjectDemo.java      类与对象
+│  ├─ ConstructorDemo.java         构造方法
+│  ├─ EncapsulationDemo.java       封装
+│  ├─ InheritanceDemo.java         继承
+│  ├─ InterfaceDemo.java           接口
+│  ├─ PolymorphismDemo.java        多态
+│  └─ StaticDemo.java              static 静态成员
+├─ collection/             集合框架
+│  ├─ ArrayListDemo.java           List 有序集合
+│  ├─ HashMapDemo.java             Map 键值对集合
+│  ├─ HashSetDemo.java             Set 去重集合
+│  ├─ CollectionLoopDemo.java      集合遍历
+│  └─ CollectionsUtilityDemo.java  Collections 工具类
+├─ exception/              异常处理
+│  ├─ TryCatchDemo.java            捕获异常
+│  ├─ FinallyDemo.java             finally
+│  ├─ ThrowDemo.java               主动抛出异常
+│  └─ CustomExceptionDemo.java     自定义异常
+├─ generic/                泛型
+│  ├─ GenericClassDemo.java        泛型类
+│  ├─ GenericMethodDemo.java       泛型方法
+│  ├─ GenericInterfaceDemo.java    泛型接口
+│  └─ WildcardDemo.java            通配符
+├─ lambda/                 Lambda / Stream
+│  ├─ LambdaBasicDemo.java         Lambda 基础语法
+│  ├─ FunctionalInterfaceDemo.java 函数式接口
+│  ├─ StreamFilterMapDemo.java     filter / map
+│  ├─ StreamCollectDemo.java       collect 收集结果
+│  └─ MethodReferenceDemo.java     方法引用
+├─ io/                     文件与输入输出
+│  ├─ FilePathDemo.java            Path / Files 基础
+│  ├─ FileReadDemo.java            读取文件
+│  ├─ FileWriteDemo.java           写入文件
+│  └─ TryWithResourcesDemo.java    自动关闭资源
+├─ datetime/               日期时间
+│  ├─ LocalDateTimeDemo.java       LocalDate / LocalDateTime
+│  ├─ DateTimeFormatterDemo.java   日期格式化
+│  ├─ DurationPeriodDemo.java      时间间隔
+│  └─ TimeZoneDemo.java            时区
+├─ thread/                 多线程基础
+├─ jdbc/                   数据库连接基础
+├─ spring/                 Spring / Spring Boot 预备知识
+└─ projectcase/            模拟真实后端业务代码
 ```
 
 ## 学习建议
@@ -86,4 +111,3 @@ Mapper/DAO  类似数据库访问层
 DTO/VO      类似前后端接口数据结构
 Entity      类似数据库表对应的数据模型
 ```
-
