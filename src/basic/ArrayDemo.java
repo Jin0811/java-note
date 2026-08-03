@@ -36,6 +36,30 @@ import java.util.Arrays;
   · int[] 是类型，[] 习惯写在类型后面（int[] scores），别写成 int scores[]。
   · 取长度用属性 names.length（不带括号）；注意 String 才是 .length() 方法。
   · 下标从 0 开始；越界访问会抛 ArrayIndexOutOfBoundsException（不会像 JS 返回 undefined）。
+
+  ===== 补充：[] 和 {} 的分工（和 JS 对比）=====
+  JS 里一个 [] 包办"声明+字面量+下标"；Java 把它拆成两个符号分工：
+    []  -> 标记数组类型 int[]、定长 new int[3]、下标访问 a[0]
+    {}  -> 只在"声明的同时赋初值"时使用：= {1,2,3}
+  完整形式：new boolean[]{false, true, false} 也是合法写法，
+  常用于"重新赋值"或"作为方法参数"等不能写 {} 简写的场合。
+  规则："给长度"和"给值"二选一——new boolean[3]{...} 会编译错误，
+  因为 new 类型[] 后长度由 {} 里的个数自动推断。
+
+  ===== new 类型[长度] 对所有类型成立 =====
+  new char[2]、new boolean[6]、new String[4] 都没问题，
+  每个格子的默认值就是该类型的默认值（char 是 '\u0000'，打印时看不见）。
+
+  ===== var 声明 vs 显式类型声明 =====
+  var flags = new boolean[]{true};        与
+  boolean[] flags = new boolean[]{true};
+  没有任何运行时区别：var 是纯编译期推断，推断结果就是 boolean[]，字节码一样。
+  差别只在可读性和写法限制（var 只能用于局部变量且必须立即初始化）。
+  注意：var 推断的是右边的"具体类型"，想声明成接口类型时要手写（见 collection 目录）。
+
+  ===== 什么时候用数组，什么时候用 List =====
+  数组：定长、能存基本类型（int[]）、性能敏感/和底层 API 打交道时用。
+  List：动态增删、后端业务代码 99% 的场景（见 collection/ArrayListDemo.java）。
 */
 
 public class ArrayDemo {
@@ -43,7 +67,12 @@ public class ArrayDemo {
         // ===== 方式一：声明同时给值（静态初始化），长度自动 = 3 =====
         // Java 数组长度固定，声明后不能像 JS Array 那样随意 push。
         String[] names = {"Alex", "Bob", "Cindy"};
+
+        // 完整形式：new 类型[]{值...}。这里和 {} 简写效果一样；
+        // 完整形式还能用在"之后再赋值"或"当方法参数"等不能写简写的场合。
+        // "给长度"和"给值"二选一：new boolean[3]{false,true,false} 是编译错误。
         boolean[] flags = new boolean[]{false, true, false};
+        // var flags = new boolean[]{false, true, false};  // 与上面完全等价（var 纯编译期推断，字节码相同）
 
         System.out.println("names.length = " + names.length);  // length 是属性，不带括号
         System.out.println("names[0] = " + names[0]);          // 下标从 0 开始
