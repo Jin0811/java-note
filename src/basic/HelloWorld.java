@@ -15,6 +15,7 @@ package basic;
  class    声明一个类，与 TS 的 class 含义一致。
           规则：一个 .java 文件最多只能有一个 public 类，且类名必须与文件名完全一致
           （HelloWorld.java 里必须是 public class HelloWorld）。
+          一个 .java 文件最多一个 public 类、类名须与文件名一致"是 javac 强制的编译规则（JLS §7.6），违反即编译失败；非 public 类不受此限制。
 
  static   静态成员：属于类本身，而不是某个实例，无需 new 即可调用。
           类比 TS：static 方法/属性。JVM 启动时是直接以 Main.main() 这样的方式调用入口的，
@@ -31,7 +32,7 @@ package basic;
  ===== Java 的四种访问权限级别 =====
 
  public       所有包可见（本文件的类和方法都用它）。
- (不写)       包私有：仅同包可见（如 basic 包内其他文件），不能跨包访问。
+ 不写          包私有：仅同包可见（如 basic 包内其他文件），不能跨包访问。
  protected    同包可见 + 不同包的【子类】也可访问（继承示例在 oop 目录）。
  private      仅当前类内部可见，外部无法访问，常用于隐藏类的字段。
 
@@ -57,6 +58,14 @@ public class HelloWorld {
         // Java: System.out.println("Hello Java");
         System.out.println("Hello Java");
         System.out.println("这是 basic 目录下的第一个 Java 示例");
+
+        // 调用同类中的静态方法 sayName。
+        // 同类 + 静态方法：直接写方法名即可；也可以写成 HelloWorld.sayName()。
+        sayName();
+    }
+
+    public static void sayName () {
+        System.out.println("My name is Tom");
     }
 }
 

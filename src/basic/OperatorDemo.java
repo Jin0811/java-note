@@ -1,6 +1,3 @@
-// package 声明当前类所属的包（命名空间），必须和文件所在目录对应：
-// src/basic/OperatorDemo.java -> package basic。
-// 类比 TS：类似模块路径 + 命名空间，用于组织代码、避免类名冲突。
 package basic;
 
 public class OperatorDemo {
