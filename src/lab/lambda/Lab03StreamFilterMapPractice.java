@@ -13,12 +13,5 @@ public class Lab03StreamFilterMapPractice {
          * 2. 筛选长度大于 4 的技能。
          * 3. 转成大写后输出。
          */
-
-        List<String> skills = Arrays.asList("JS", "Vue", "Java", "Spring", "MySQL");
-
-        skills.stream()
-                .filter(skill -> skill.length() > 4)
-                .map(String::toUpperCase)
-                .forEach(System.out::println);
     }
 }

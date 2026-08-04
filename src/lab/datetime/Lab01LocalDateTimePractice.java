@@ -15,13 +15,5 @@ public class Lab01LocalDateTimePractice {
          * 3. 创建一个固定的学习开始时间。
          * 4. 分别输出这些值。
          */
-
-        LocalDate today = LocalDate.now();
-        LocalTime nowTime = LocalTime.now();
-        LocalDateTime startAt = LocalDateTime.of(2026, 8, 4, 9, 30);
-
-        System.out.println("today = " + today);
-        System.out.println("nowTime = " + nowTime);
-        System.out.println("startAt = " + startAt);
     }
 }

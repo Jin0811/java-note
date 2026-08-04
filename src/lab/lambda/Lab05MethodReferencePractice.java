@@ -13,9 +13,5 @@ public class Lab05MethodReferencePractice {
          * 2. 先用 Lambda 输出。
          * 3. 再改成 System.out::println 方法引用。
          */
-
-        List<String> names = Arrays.asList("Alex", "Ben", "Cindy");
-
-        names.forEach(System.out::println);
     }
 }

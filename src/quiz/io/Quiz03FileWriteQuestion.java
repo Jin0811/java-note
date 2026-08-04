@@ -23,20 +23,5 @@ public class Quiz03FileWriteQuestion {
          * 2. resolve("quiz-io-output.txt") 做了什么？
          * 3. writeString 默认会覆盖还是追加？
          */
-
-        /*
-         * ========== 标准答案 ==========
-         *
-         * 实际输出：
-         * true
-         * Java IO
-         *
-         * 问题 1：创建目录。如果目录已存在，不会报错。
-         *
-         * 问题 2：在 outputDir 后面拼接一个子路径，得到 tmp/quiz-io-output.txt。
-         *
-         * 问题 3：这里的 writeString 会覆盖原文件内容。
-         *     如果想追加，需要使用 StandardOpenOption.APPEND。
-         */
     }
 }

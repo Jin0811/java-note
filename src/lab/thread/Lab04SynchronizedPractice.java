@@ -11,24 +11,10 @@ public class Lab04SynchronizedPractice {
          * 3. 使用 join 等待两个线程结束。
          * 4. 输出最终 count，应该是 2000。
          */
-
-        SafeCounter counter = new SafeCounter();
-
-        Thread t1 = new Thread(() -> add1000(counter));
-        Thread t2 = new Thread(() -> add1000(counter));
-
-        t1.start();
-        t2.start();
-        t1.join();
-        t2.join();
-
-        System.out.println(counter.getCount());
     }
 
     static void add1000(SafeCounter counter) {
-        for (int i = 0; i < 1000; i++) {
-            counter.increment();
-        }
+        // TODO: 循环调用 counter.increment()。
     }
 }
 
@@ -36,7 +22,7 @@ class SafeCounter {
     private int count;
 
     synchronized void increment() {
-        count++;
+        // TODO: 累加 count。
     }
 
     int getCount() {

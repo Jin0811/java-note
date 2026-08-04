@@ -13,9 +13,5 @@ public class Lab01LambdaBasicPractice {
          * 2. 使用 forEach + Lambda 输出每个 skill。
          * 3. 输出时拼接 "learning: "。
          */
-
-        List<String> skills = Arrays.asList("JavaScript", "TypeScript", "Java", "Spring");
-
-        skills.forEach(skill -> System.out.println("learning: " + skill));
     }
 }

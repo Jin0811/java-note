@@ -17,12 +17,5 @@ public class Lab04TryWithResourcesPractice {
          * 2. 放在 try (...) 小括号中。
          * 3. 读取并输出第一行。
          */
-
-        Path path = Paths.get("src", "io", "TryWithResourcesDemo.java");
-
-        try (BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8)) {
-            String firstLine = reader.readLine();
-            System.out.println(firstLine);
-        }
     }
 }

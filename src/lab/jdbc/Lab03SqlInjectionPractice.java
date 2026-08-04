@@ -10,12 +10,5 @@ public class Lab03SqlInjectionPractice {
          * 2. 拼接出 unsafeSql 并输出。
          * 3. 输出 PreparedStatement 的安全 SQL 模板。
          */
-
-        String input = "' or '1'='1";
-        String unsafeSql = "select * from users where name = '" + input + "'";
-        String safeSql = "select * from users where name = ?";
-
-        System.out.println(unsafeSql);
-        System.out.println(safeSql);
     }
 }

@@ -16,16 +16,5 @@ public class Lab03FileWritePractice {
          * 2. 写入 tmp/lab-io-output.txt。
          * 3. 再读回文件内容并输出。
          */
-
-        Path outputDir = Paths.get("tmp");
-        Files.createDirectories(outputDir);
-
-        Path outputFile = outputDir.resolve("lab-io-output.txt");
-        String content = "Hello IO\nJava 写文件练习";
-
-        Files.writeString(outputFile, content, StandardCharsets.UTF_8);
-        String saved = Files.readString(outputFile, StandardCharsets.UTF_8);
-
-        System.out.println(saved);
     }
 }

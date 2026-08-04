@@ -21,19 +21,5 @@ public class Quiz04StreamCollectQuestion {
          * 2. scores 原集合会变化吗？
          * 3. collect(Collectors.toList()) 的作用是什么？
          */
-
-        /*
-         * ========== 标准答案 ==========
-         *
-         * 实际输出：
-         * [60, 80]
-         * [50, 60, 80]
-         *
-         * 问题 1：60 和 80。
-         *
-         * 问题 2：不会，filter 得到的是新的 Stream 结果。
-         *
-         * 问题 3：把 Stream 中剩下的元素收集成一个 List。
-         */
     }
 }

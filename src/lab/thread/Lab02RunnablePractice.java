@@ -11,14 +11,5 @@ public class Lab02RunnablePractice {
          * 3. 给两个线程设置不同名称。
          * 4. 启动两个线程。
          */
-
-        Runnable task = () -> {
-            for (int i = 1; i <= 3; i++) {
-                System.out.println(Thread.currentThread().getName() + " -> " + i);
-            }
-        };
-
-        new Thread(task, "task-a").start();
-        new Thread(task, "task-b").start();
     }
 }

@@ -14,11 +14,5 @@ public class Lab01FilePathPractice {
          * 3. 输出父目录。
          * 4. 输出绝对路径。
          */
-
-        Path path = Paths.get("src", "io", "FilePathDemo.java");
-
-        System.out.println("fileName = " + path.getFileName());
-        System.out.println("parent = " + path.getParent());
-        System.out.println("absolutePath = " + path.toAbsolutePath());
     }
 }

@@ -10,12 +10,6 @@ public class Lab02FunctionalInterfacePractice {
          * 2. 使用 Lambda 创建 upper 和 prefix 两个实现。
          * 3. 调用 format 方法观察结果。
          */
-
-        TextFormatter upper = text -> text.toUpperCase();
-        TextFormatter prefix = text -> "Java: " + text;
-
-        System.out.println(upper.format("spring"));
-        System.out.println(prefix.format("lambda"));
     }
 }
 

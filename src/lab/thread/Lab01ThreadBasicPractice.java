@@ -11,12 +11,5 @@ public class Lab01ThreadBasicPractice {
          * 3. 调用 start() 启动线程。
          * 4. 在 main 线程中也输出当前线程名。
          */
-
-        Thread worker = new Thread(() -> {
-            System.out.println("worker = " + Thread.currentThread().getName());
-        });
-
-        worker.start();
-        System.out.println("main = " + Thread.currentThread().getName());
     }
 }

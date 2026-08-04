@@ -15,13 +15,5 @@ public class Lab04StreamCollectPractice {
          * 3. 使用 collect(Collectors.toList()) 收集成新 List。
          * 4. 输出新集合。
          */
-
-        List<Integer> scores = Arrays.asList(45, 60, 72, 89, 30);
-
-        List<Integer> passedScores = scores.stream()
-                .filter(score -> score >= 60)
-                .collect(Collectors.toList());
-
-        System.out.println(passedScores);
     }
 }

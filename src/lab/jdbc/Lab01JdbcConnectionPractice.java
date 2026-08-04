@@ -14,17 +14,10 @@ public class Lab01JdbcConnectionPractice {
          * 2. 输出这些配置。
          * 3. 阅读 openConnection 方法，理解 DriverManager.getConnection。
          */
-
-        String url = "jdbc:mysql://localhost:3306/java_note";
-        String user = "root";
-        String password = "123456";
-
-        System.out.println(url);
-        System.out.println(user);
-        System.out.println(password.length());
     }
 
     static Connection openConnection(String url, String user, String password) throws SQLException {
-        return DriverManager.getConnection(url, user, password);
+        // TODO: 使用 DriverManager.getConnection 打开连接。
+        return null;
     }
 }

@@ -18,12 +18,5 @@ public class Lab02FileReadPractice {
          * 3. 输出第一行。
          * 4. 判断文件内容中是否包含 "readAllLines"。
          */
-
-        Path path = Paths.get("src", "io", "FileReadDemo.java");
-        List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
-
-        System.out.println("line count = " + lines.size());
-        System.out.println("first line = " + lines.get(0));
-        System.out.println("contains readAllLines = " + lines.toString().contains("readAllLines"));
     }
 }
