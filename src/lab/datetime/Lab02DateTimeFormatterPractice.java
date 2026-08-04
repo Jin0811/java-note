@@ -13,5 +13,13 @@ public class Lab02DateTimeFormatterPractice {
          * 2. 使用 yyyy-MM-dd HH:mm:ss 格式化为字符串。
          * 3. 把字符串解析回 LocalDateTime。
          */
+
+        LocalDateTime time1 = LocalDateTime.now();
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String timeStr = time1.format(timeFormatter);
+        LocalDateTime time2 = LocalDateTime.parse(timeStr, timeFormatter);
+
+        System.out.println(timeStr);
+        System.out.println(time2);
     }
 }

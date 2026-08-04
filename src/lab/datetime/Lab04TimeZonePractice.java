@@ -14,5 +14,12 @@ public class Lab04TimeZonePractice {
          * 3. 获取 America/New_York 当前时间。
          * 4. 输出三个 ZonedDateTime。
          */
+        ZonedDateTime shanghaiTime = ZonedDateTime.now(ZoneId.of("Asia/Shanghai"));
+        ZonedDateTime utcTime = ZonedDateTime.now(ZoneId.of("UTC"));
+        ZonedDateTime newYorkTime = ZonedDateTime.now(ZoneId.of("America/New_York"));
+
+        System.out.println("shanghaiTime = " + shanghaiTime);
+        System.out.println("utcTime = " + utcTime);
+        System.out.println("newYorkTime = " + newYorkTime);
     }
 }
