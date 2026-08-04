@@ -91,6 +91,16 @@ src/
 │  ├─ DateTimeFormatterDemo.java   日期格式化
 │  ├─ DurationPeriodDemo.java      时间间隔
 │  └─ TimeZoneDemo.java            时区
+├─ thread/                 多线程基础
+│  ├─ ThreadBasicDemo.java         Thread 创建和启动
+│  ├─ RunnableDemo.java            Runnable 任务
+│  ├─ SleepJoinDemo.java           sleep / join
+│  └─ SynchronizedDemo.java        synchronized 线程安全
+├─ jdbc/                   数据库连接基础
+│  ├─ JdbcConnectionDemo.java      JDBC 连接参数
+│  ├─ PreparedStatementDemo.java   PreparedStatement
+│  ├─ SqlInjectionDemo.java        SQL 注入风险
+│  └─ ResultSetMappingDemo.java    ResultSet 映射对象
 ├─ lab/                    配套练习
 │  ├─ basic/                       基础语法练习
 │  ├─ oop/                         面向对象练习
@@ -99,7 +109,9 @@ src/
 │  ├─ generic/                     泛型练习
 │  ├─ lambda/                      Lambda / Stream 练习
 │  ├─ io/                          文件与输入输出练习
-│  └─ datetime/                    日期时间练习
+│  ├─ datetime/                    日期时间练习
+│  ├─ thread/                      多线程练习
+│  └─ jdbc/                        JDBC 练习
 ├─ quiz/                   自测题
 │  ├─ basic/                       基础语法自测
 │  ├─ oop/                         面向对象自测
@@ -108,9 +120,9 @@ src/
 │  ├─ generic/                     泛型自测
 │  ├─ lambda/                      Lambda / Stream 自测
 │  ├─ io/                          文件与输入输出自测
-│  └─ datetime/                    日期时间自测
-├─ thread/                 多线程基础
-├─ jdbc/                   数据库连接基础
+│  ├─ datetime/                    日期时间自测
+│  ├─ thread/                      多线程自测
+│  └─ jdbc/                        JDBC 自测
 ├─ spring/                 Spring / Spring Boot 预备知识
 └─ projectcase/            模拟真实后端业务代码
 ```
