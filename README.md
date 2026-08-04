@@ -95,12 +95,20 @@ src/
 │  ├─ basic/                       基础语法练习
 │  ├─ oop/                         面向对象练习
 │  ├─ collection/                  集合练习
-│  └─ exception/                   异常练习
+│  ├─ exception/                   异常练习
+│  ├─ generic/                     泛型练习
+│  ├─ lambda/                      Lambda / Stream 练习
+│  ├─ io/                          文件与输入输出练习
+│  └─ datetime/                    日期时间练习
 ├─ quiz/                   自测题
 │  ├─ basic/                       基础语法自测
 │  ├─ oop/                         面向对象自测
 │  ├─ collection/                  集合自测
-│  └─ exception/                   异常自测
+│  ├─ exception/                   异常自测
+│  ├─ generic/                     泛型自测
+│  ├─ lambda/                      Lambda / Stream 自测
+│  ├─ io/                          文件与输入输出自测
+│  └─ datetime/                    日期时间自测
 ├─ thread/                 多线程基础
 ├─ jdbc/                   数据库连接基础
 ├─ spring/                 Spring / Spring Boot 预备知识
