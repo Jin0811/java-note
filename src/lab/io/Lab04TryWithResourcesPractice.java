@@ -15,7 +15,20 @@ public class Lab04TryWithResourcesPractice {
          * TODO:
          * 1. 使用 Files.newBufferedReader 创建 reader。
          * 2. 放在 try (...) 小括号中。
-         * 3. 读取并输出第一行。
+         * 3. 逐行输出文件内容
          */
+        Path filePath = Paths.get("tmp", "lab-io-output.txt");
+        try (BufferedReader reader = Files.newBufferedReader(filePath, StandardCharsets.UTF_8)) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+
+//            String line = reader.readLine();
+//            while (line != null) {
+//                System.out.println(line);
+//                line = reader.readLine();
+//            }
+        }
     }
 }
