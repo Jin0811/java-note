@@ -11,6 +11,15 @@ public class Lab02FinallyPractice {
          * 3. 在 finally 中输出 "释放资源"。
          * 4. 修改除数为 0 和非 0，观察 finally 是否执行。
          */
+        try {
+            int a = 10;
+            int b = 0;
+            int c = a / b;
+        } catch (ArithmeticException e) {
+            System.out.println("错误：" + e.getMessage());
+        } finally {
+            System.out.println("释放资源");
+        }
     }
 }
 

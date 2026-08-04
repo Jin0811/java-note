@@ -12,6 +12,17 @@ public class Lab01TryCatchPractice {
          * 4. 转换失败时输出友好提示。
          * 5. 在 catch 后输出 "程序继续执行"。
          */
+
+        String input = "123a";
+        try {
+            int num = Integer.parseInt(input);
+            System.out.println(num);
+        } catch (NumberFormatException e) {
+            System.out.println("处理数值转换错误：转换失败，请检查您的输入值");
+        } catch (Exception e) {
+            System.out.println("兜底全部错误");
+        }
+        System.out.println("程序继续执行");
     }
 }
 
