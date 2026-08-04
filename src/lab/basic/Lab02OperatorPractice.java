@@ -12,6 +12,28 @@ public class Lab02OperatorPractice {
          * 4. 定义 boolean 变量 hasJavaBasic 和 hasProjectExperience。
          * 5. 使用 && 和 || 输出两个组合判断结果。
          */
+
+        int a = 100;
+        int b = 3;
+
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a % b = " + (a % b));
+
+        if (a == b) {
+            System.out.println("a等于b");
+        } else if (a > b) {
+            System.out.println("a大于b");
+        } else {
+            System.out.println("a小于b");
+        }
+
+        boolean hasJavaBasic = true;
+        boolean hasProjectExperience = false;
+        System.out.println(hasJavaBasic && hasProjectExperience);
+        System.out.println(hasJavaBasic || hasProjectExperience);
     }
 }
 

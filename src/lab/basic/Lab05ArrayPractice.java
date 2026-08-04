@@ -1,5 +1,7 @@
 package lab.basic;
 
+import java.util.Arrays;
+
 public class Lab05ArrayPractice {
     public static void main(String[] args) {
         /*
@@ -13,6 +15,28 @@ public class Lab05ArrayPractice {
          * 5. 计算并输出平均分。
          * 6. 找出并输出最高分。
          */
+
+        int[] scores = {20, 56, 82, 23, 45};
+        System.out.println(scores.length);
+        System.out.println(scores[0]);
+        System.out.println(scores[scores.length - 1]);
+
+        int sum = 0;
+        for (int score : scores) {
+            sum = sum + score;
+        }
+        System.out.println("sum = " + sum);
+
+        System.out.println("平均分 = " + (sum / scores.length));
+        System.out.println("平均分带小数 = " + ((double) sum / scores.length));
+
+        int max = scores[0];
+        for (int score : scores) {
+            if (score > max) {
+                max = score;
+            }
+        }
+        System.out.println("最高分 = " + max);
     }
 }
 

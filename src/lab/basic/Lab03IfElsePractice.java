@@ -13,6 +13,20 @@ public class Lab03IfElsePractice {
          * 5. 其他情况输出 "需要继续练习"。
          * 6. 再用三元表达式输出 score 是否通过。
          */
+
+        int score = 68;
+
+        if (score >= 90) {
+            System.out.println("优秀");
+        } else if (score >= 80) {
+            System.out.println("良好");
+        } else if (score >= 60) {
+            System.out.println("及格");
+        } else {
+            System.out.println("需要继续练习");
+        }
+
+        System.out.println(score >= 60 ? "通过" : "未通过");
     }
 }
 

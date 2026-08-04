@@ -12,6 +12,14 @@ public class Lab01VariablePractice {
          * 4. 声明一个 double 类型变量 expectedSalary，保存一个期望薪资数字。
          * 5. 用 System.out.println 输出一句完整介绍。
          */
+
+        String name = "张三";
+        int years = 10;
+        boolean learningJava = true;
+        double expectedSalary = 1000000;
+
+        String introduction = "My name is %s, years is %d, learningJava is %b, expectedSalary is %.2f".formatted(name, years, learningJava, expectedSalary);
+        System.out.println(introduction);
     }
 }
 

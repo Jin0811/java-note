@@ -12,6 +12,27 @@ public class Lab04LoopPractice {
          * 4. 创建 String[] skills，包含 "JavaScript"、"TypeScript"、"Java"。
          * 5. 使用增强 for 循环输出每一个 skill。
          */
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+
+        int count = 0;
+        for (int i = 1; i <= 100; i++) {
+            count = count + i;
+        }
+        System.out.println(count);
+
+        int num = 5;
+        while (num > 0) {
+            System.out.println("while num = " + num);
+            num--;
+        }
+
+        String[] skills = {"JavaScript", "TypeScript", "Java"};
+        for (String val : skills) {
+            System.out.println(val);
+        }
     }
 }
 

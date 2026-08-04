@@ -11,21 +11,30 @@ public class Lab06MethodPractice {
          * 3. 实现 getLevel 方法，根据分数返回 "A"、"B"、"C"、"D"。
          * 4. 在 main 方法里调用这些方法，并输出结果。
          */
+
+        int sum = add(1, 2);
+        System.out.println(sum);
+
+        boolean flag = isAdult(19);
+        System.out.println(flag);
+
+        String levelStr = getLevel(88);
+        System.out.println(levelStr);
     }
 
     static int add(int a, int b) {
-        // TODO: 返回 a + b。
-        return 0;
+        return a + b;
     }
 
     static boolean isAdult(int age) {
-        // TODO: 判断 age 是否大于等于 18。
-        return false;
+        return age >= 18;
     }
 
     static String getLevel(int score) {
-        // TODO: score >= 90 返回 "A"，>= 80 返回 "B"，>= 60 返回 "C"，否则返回 "D"。
-        return "";
+        if (score >= 90) return "A";
+        if (score >= 80) return "B";
+        if (score >= 60) return "C";
+        return "D";
     }
 }
 
