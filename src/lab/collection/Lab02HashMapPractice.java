@@ -16,6 +16,20 @@ public class Lab02HashMapPractice {
          * 5. 遍历输出所有 key 和 value。
          */
         Map<String, String> user = new HashMap<>();
+
+        user.put("name", "Tom");
+        user.put("role", "管理员");
+        user.put("target", "111");
+
+        System.out.println(user.get("name"));
+
+        user.put("role", "游客");
+
+        System.out.println(user);
+
+        for (Map.Entry<String, String> entry : user.entrySet()) {
+            System.out.println("key = " + entry.getKey() + ", value = " + entry.getValue());
+        }
     }
 }
 
