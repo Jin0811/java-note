@@ -15,6 +15,20 @@
 
 如果本机还是 JDK 8 / 11，基础章节的大部分文件可以单独运行，但包含这些新语法的文件会编译失败。后续如果希望统一兼容 JDK 11，可以把新语法示例改成注释对照或单独放到 advanced 目录。
 
+## Maven 依赖
+
+项目使用 Maven 管理依赖，现有根目录 `src` 保持为 Java 源码目录。
+
+当前已加入 MySQL Connector/J，运行 JDBC 示例前需要先让 IDEA 重新加载 `pom.xml`。
+
+在项目根目录执行：
+
+```bash
+mvn compile
+```
+
+Maven 会下载依赖并将其加入 Java 程序的运行时 classpath。
+
 ## 学习目标
 
 1. 快速熟悉 Java 语言本身。
