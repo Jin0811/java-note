@@ -1,6 +1,13 @@
 ### IntelliJ IDEA ###
 out/
 target/
+build/
+.idea/workspace.xml
+.idea/shelf/
+.idea/httpRequests/
+.idea/queries/
+.idea/dataSources/
+.idea/dataSources.local.xml
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
