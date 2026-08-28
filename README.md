@@ -21,6 +21,10 @@
 
 当前已加入 MySQL Connector/J，运行 JDBC 示例前需要先让 IDEA 重新加载 `pom.xml`。
 
+JDBC Demo 默认连接 `localhost:3306/java_note`，用户名为 `root`，密码默认读取 `123456`。如果本机密码不同，建议在 IDEA 的运行配置中设置环境变量 `JAVA_NOTE_DB_PASSWORD`，或设置 JVM 参数 `-Djava.note.jdbc.password=你的密码`。
+
+首次运行 JDBC Demo 时，会自动创建 `users` 表并插入 `Alex`、`Mina`、`Kai` 三条示例数据。初始化使用幂等 SQL，重复运行不会持续插入重复姓名的数据。
+
 在项目根目录执行：
 
 ```bash
@@ -112,6 +116,7 @@ src/
 │  └─ SynchronizedDemo.java        synchronized 线程安全
 ├─ jdbc/                   数据库连接基础
 │  ├─ JdbcConnectionDemo.java      JDBC 连接参数
+│  ├─ JdbcDemoSupport.java         JDBC 配置和示例表初始化
 │  ├─ PreparedStatementDemo.java   PreparedStatement
 │  ├─ SqlInjectionDemo.java        SQL 注入风险
 │  └─ ResultSetMappingDemo.java    ResultSet 映射对象
