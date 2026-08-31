@@ -1,6 +1,6 @@
 package lab.lambda;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lab01LambdaBasicPractice {
@@ -13,5 +13,11 @@ public class Lab01LambdaBasicPractice {
          * 2. 使用 forEach + Lambda 输出每个 skill。
          * 3. 输出时拼接 "learning: "。
          */
+
+        List<String> skills = new ArrayList<>();
+        skills.add("唱歌");
+        skills.add("跳舞");
+        skills.add("篮球");
+        skills.forEach(skill -> System.out.println("learning: " + skill));
     }
 }

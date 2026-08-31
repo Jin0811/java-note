@@ -1,6 +1,6 @@
 package lab.lambda;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lab03StreamFilterMapPractice {
@@ -13,5 +13,10 @@ public class Lab03StreamFilterMapPractice {
          * 2. 筛选长度大于 4 的技能。
          * 3. 转成大写后输出。
          */
+        List<String> skills = new ArrayList<>(List.of("JavaScript", "TypeScript", "Java", "Spring"));
+        skills.stream()
+            .filter(item -> item.length() > 4)
+            .map(String::toUpperCase)
+            .forEach(System.out::println);
     }
 }
